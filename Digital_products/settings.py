@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'products.apps.ProductsConfig',
     'accounts.apps.AccountsConfig',
+    'subscriptions.apps.SubscriptionsConfig',
 
     'rest_framework',
     'rest_framework_simplejwt',
