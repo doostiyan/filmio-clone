@@ -12,4 +12,4 @@ class SubscriptionAdmin(admin.ModelAdmin):
 
 @admin.register(Package)
 class PackageAdmin(admin.ModelAdmin):
-    list_display = ('title', 'sku', 'is_enable', 'price', 'duration')
+    list_display = ('title', 'sku', 'is_active', 'price', 'duration')

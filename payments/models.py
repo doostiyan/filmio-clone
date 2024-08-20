@@ -13,7 +13,7 @@ class Gateway(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField(blank=True)
     avatar = models.ImageField(upload_to="getaways/")
-    is_enabled = models.BooleanField(default=True)
+    is_active = models.BooleanField(default=True)
     # credentials = models.TextField(blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

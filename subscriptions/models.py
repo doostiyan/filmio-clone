@@ -13,7 +13,7 @@ class Package(models.Model):
     sku = models.CharField(_('stock keeping unit'),max_length=50, validators=[validate_sku], db_index=True)
     description = models.TextField(blank=True)
     avatar = models.ImageField(upload_to='packages/', blank=True)
-    is_enable = models.BooleanField(default=True)
+    is_active = models.BooleanField(default=True)
     price = models.PositiveIntegerField()
     duration = models.DurationField(blank=True, null=True)
     # getaways = models.ManyToManyField('payment.Gateway')
